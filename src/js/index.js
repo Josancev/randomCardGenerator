@@ -7,30 +7,28 @@ import "../assets/img/4geeks.ico";
 import "../style/index.scss";
 
 window.onload = function() {
-  
-
-    let card = ["&spades;", "&clubs;", "&hearts;", "&diams;"];
-    let numbers = [
-      "A",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "J",
-      "Q",
-      "K"
-    ];
+  let card = ["&spades;"];
+  let numbers = [
+    "A",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K"
+  ];
 
   let c = card.length;
   let n = numbers.length;
 
-  let ca = Math.round((Math.random() * c) + 1);
-  let nu = Math.round((Math.random() * n) + 1);
+  let ca = Math.round(Math.random() * c);
+  let nu = Math.round(Math.random() * n);
 
   let car = card[ca];
   let num = numbers[nu];
