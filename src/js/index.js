@@ -7,7 +7,7 @@ import "../assets/img/4geeks.ico";
 import "../style/index.scss";
 
 window.onload = function() {
-  let card = ["&spades;"];
+  let card = ["&spades;", "&hearts;", "&clubs;", "&diams;"];
   let numbers = [
     "A",
     "2",
@@ -27,11 +27,14 @@ window.onload = function() {
   let c = card.length;
   let n = numbers.length;
 
-  let ca = Math.round(Math.random() * c);
-  let nu = Math.round(Math.random() * n);
-
+  let ca = Math.floor(Math.random() * c);
+  let nu = Math.floor(Math.random() * n);
+  console.log(ca);
+  console.log(nu);
   let car = card[ca];
   let num = numbers[nu];
+  console.log(car);
+  console.log(num);
 
   document.getElementById("symbol").innerHTML = car;
   document.getElementById("numb").innerHTML = num;
